@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import varcelLogo from "../public/vercel.svg";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -15,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} text-slate-300`}>{children}</body>
     </html>
   );
 }
