@@ -25,7 +25,7 @@ const techStackLogos = [
   sqlLogo,
 ];
 
-export const Home = () => {
+const HomePage = () => {
   const amazonClone = {
     title: "Amazon",
     details: "A clone of the amazon website",
@@ -327,4 +327,4 @@ const Summary = () => {
   return <h1>Summary</h1>;
 };
 
-export default Home;
+export default HomePage;
