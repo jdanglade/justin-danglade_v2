@@ -5,14 +5,13 @@ import {
   IoArrowUpOutline,
 } from "react-icons/io5";
 import CustomCard from "./components/custom-card";
-import expressLogo from "../public/express.svg";
-import graphQLLogo from "../public/graphql.svg";
-import mongoDBLogo from "../public/mongodb.svg";
-import nextJSLogo from "../public/next.svg";
-import nodeJSLogo from "../public/nodejs.svg";
-import reactLogo from "../public/react.svg";
-import sqlLogo from "../public/sql.svg";
-import varcelLogo from "../public/vercel.svg";
+import expressLogo from "../public/logos/express.svg";
+import graphQLLogo from "../public/logos/graphql.svg";
+import mongoDBLogo from "../public/logos/mongodb.svg";
+import nextJSLogo from "../public/logos/next.svg";
+import nodeJSLogo from "../public/logos/nodejs.svg";
+import reactLogo from "../public/logos/react.svg";
+import sqlLogo from "../public/logos/sql.svg";
 import Link from "next/link";
 
 const techStackLogos = [
@@ -60,9 +59,15 @@ const HomePage = () => {
             <li className="">
               <Link href="#education">Education</Link>
             </li>
+            <li className="">Photography </li>
           </ul>
           <div className="flex flex-1 relative justify-center items-center border-2 border-blue-500">
-            Profile picture
+            <Image
+              src="https://ucarecdn.com/43ef937c-70c9-4c57-b746-020b2771a616/-/preview/-/quality/smart/"
+              alt="Profile Picture"
+              width={45}
+              height={45}
+            ></Image>
           </div>
         </nav>
         <div className="flex flex-row flex-grow-0 relative justify-center py-4 border-2 border-green-500">
@@ -223,99 +228,30 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col relative pt-12 border-2 border-green-500 ">
-          <span id="education" className="">
-            Suspendisse gravida imperdiet vulputate. Suspendisse potenti. Proin
-            semper odio quis mauris efficitur, ut tristique odio bibendum.
-            Praesent eget urna eu ligula ultrices viverra ac et ipsum. Etiam ut
-            facilisis risus. Nullam aliquam tristique enim, id semper nibh
-            viverra a. Curabitur feugiat, sem ut consequat fringilla, lectus
-            justo vestibulum ante, eu dignissim nisi leo vel arcu. Pellentesque
-            nulla justo, consectetur sit amet sagittis sed, sagittis non felis.
-            Cras vestibulum blandit arcu, sit amet convallis metus dignissim
-            nec. Donec sit amet maximus dui, et ultricies tellus. Etiam quis
-            enim tincidunt, scelerisque odio sed, porta nulla. Pellentesque
-            habitant morbi tristique senectus et netus et malesuada fames ac
-            turpis egestas. Morbi ex ipsum, eleifend nec augue in, fermentum
-            ullamcorper velit. Quisque interdum tincidunt lectus, nec rhoncus
-            odio bibendum vel. Proin dictum sit amet tellus non efficitur.
-            Vivamus diam ipsum, ullamcorper ullamcorper aliquet vel, fringilla
-            ut erat. Aenean malesuada sit amet erat ut blandit. Nunc quis dui
+        <div
+          id="education"
+          className="flex flex-col relative pt-12 border-2 border-green-500 "
+        >
+          <span className="">
+            I was born and raised in Miami Florida but interestingly enough, I
+            don&apos;t speak Spanish, but I do know a couple of programming
+            languages like C/C++ and JavaScript. I got my associates degree at
+            Miami Dade College and while I was there, I took up a job as a
+            tutor. At first, I provided tutoring for CGS1060, a basic Microsoft
+            Office course that was, for the most part, intuitive for most people
+            taking the class. I kept studying, multiple C++, Java, and Python
+            courses and in time I ended up tutoring those classes as well.
+            Seeing other&apos;s mistakes and misunderstandings was instrumental
+            when taking my studies further...
           </span>
           <span className="">
-            nec ex eleifend venenatis vitae nec lectus. Donec quis lorem
-            condimentum, volutpat tellus sed, mattis lectus. Cras vitae dui eget
-            purus aliquam fermentum. Sed enim risus, blandit non lacus vel,
-            aliquam finibus nibh. Sed rhoncus sollicitudin molestie. Donec
-            posuere aliquam neque. Etiam vestibulum orci eleifend enim
-            ullamcorper euismod. Ut venenatis egestas lorem, rutrum pulvinar
-            libero congue eu. Mauris ut mi leo. Mauris pellentesque fringilla
-            dolor, sed cursus ipsum hendrerit vel. Mauris vitae ligula eu urna
-            cursus pretium ac sit amet augue. Quisque vulputate condimentum
-            augue, ut dictum turpis consequat nec. Duis efficitur ligula mi, non
-            faucibus nisl suscipit semper. Duis fermentum maximus orci sed
-            egestas. Suspendisse a est aliquam, egestas lorem eu, consectetur
-            ipsum. Nulla ut finibus mauris. Vivamus vel porta purus. Sed
-          </span>
-          <span className="">
-            consequat iaculis auctor. Maecenas dapibus nec odio vitae luctus.
-            Cras consectetur nulla nec ligula mollis, nec malesuada tellus
-            scelerisque. Vestibulum blandit lobortis pharetra. Aliquam sagittis
-            pulvinar efficitur. Suspendisse massa metus, viverra et tortor eget,
-            vulputate volutpat nunc. Vivamus in est eget ex porttitor dapibus.
-            Nulla gravida nec ante in ornare. Pellentesque vitae faucibus nisi.
-            Curabitur ut consequat nulla, quis egestas velit. Integer fermentum,
-            odio quis euismod auctor, lectus quam imperdiet orci, et lacinia
-            ipsum lorem at enim. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Maecenas viverra leo mauris, at rutrum velit
-            porttitor aliquet. Integer eu dui ac nisl feugiat convallis eget a
-          </span>
-          <span className="">
-            dolor. Integer id sollicitudin urna. Interdum et malesuada fames ac
-            ante ipsum primis in faucibus. In id rutrum lorem. Donec feugiat
-            tortor vel diam rutrum, sed varius turpis consequat. In ultrices
-            sapien sit amet maximus convallis. Mauris in nisl risus. In feugiat,
-            nulla eu tristique hendrerit, risus eros convallis lorem, sed varius
-            nibh erat eu mauris. Suspendisse gravida imperdiet vulputate.
-            Suspendisse potenti. Proin semper odio quis mauris efficitur, ut
-            tristique odio bibendum. Praesent eget urna eu ligula ultrices
-            viverra ac et ipsum. Etiam ut facilisis risus. Nullam aliquam
-            tristique enim, id semper nibh viverra a. Curabitur feugiat, sem ut
-            consequat fringilla, lectus justo vestibulum ante, eu dignissim nisi
-            leo vel arcu. Pellentesque nulla justo, consectetur sit amet
-            sagittis sed, sagittis non felis. Cras vestibulum blandit arcu, sit
-            amet convallis metus dignissim nec. Donec sit amet maximus dui, et
-            ultricies tellus. Etiam quis enim tincidunt, scelerisque odio sed,
-            porta nulla. Pellentesque habitant morbi tristique senectus et netus
-            et malesuada fames ac turpis egestas. Morbi ex ipsum, eleifend nec
-            augue in, fermentum ullamcorper velit. Quisque interdum tincidunt
-            lectus, nec rhoncus odio bibendum vel. Proin dictum sit amet tellus
-            non efficitur. Vivamus diam ipsum, ullamcorper ullamcorper aliquet
-            vel, fringilla ut erat. Aenean malesuada sit amet erat ut blandit.
-            Nunc quis dui nec ex eleifend venenatis vitae nec lectus. Donec quis
-            lorem condimentum, volutpat tellus sed, mattis lectus. Cras vitae
-          </span>
-          <span className="">
-            dui eget purus aliquam fermentum. Sed enim risus, blandit non lacus
-            vel, aliquam finibus nibh. Sed rhoncus sollicitudin molestie. Donec
-            posuere aliquam neque. Etiam vestibulum orci eleifend enim
-            ullamcorper euismod. Ut venenatis egestas lorem, rutrum pulvinar
-            libero congue eu. Mauris ut mi leo. Mauris pellentesque fringilla
-            dolor, sed cursus ipsum hendrerit vel. Mauris vitae ligula eu urna
-            cursus pretium ac sit amet augue. Quisque vulputate condimentum
-            augue, ut dictum turpis consequat nec. Duis efficitur ligula mi, non
-            faucibus nisl suscipit semper. Duis fermentum maximus orci sed
-            egestas. Suspendisse a est aliquam, egestas lorem eu, consectetur
-            ipsum. Nulla ut finibus mauris. Vivamus vel porta purus. Sed
-            consequat iaculis auctor. Maecenas dapibus nec odio vitae luctus.
-            Cras consectetur nulla nec ligula mollis, nec malesuada tellus
-            scelerisque. Vestibulum blandit lobortis pharetra. Aliquam sagittis
-            pulvinar efficitur. Suspendisse massa metus, viverra et tortor eget,
-            vulputate volutpat nunc. Vivamus in est eget ex porttitor dapibus.
-            Nulla gravida nec ante in ornare. Pellentesque vitae faucibus nisi.
-            Curabitur ut consequat nulla, quis egestas velit. Integer fermentum,
-            odio quis euismod auctor, lectus quam imperdiet orci, et lacinia
-            ipsum lorem at enim.
+            After MDC I moved on to Florida International University to complete
+            my Bachelor&apos;s degree. Meeting so many career driven young
+            adults was nothing short of inspirational. I saw myself in my
+            classmates, they were just like me, confident that all this effort
+            would pay off. A degree in Computer Science was not easy but after
+            being able to complete the curriculum I can&apos;t help but carry
+            some pride around wherever I go.
           </span>
         </div>
       </main>

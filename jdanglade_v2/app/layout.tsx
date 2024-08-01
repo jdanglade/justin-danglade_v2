@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import varcelLogo from "../public/vercel.svg";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
