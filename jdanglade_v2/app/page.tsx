@@ -61,13 +61,8 @@ const HomePage = () => {
             </li>
             <li className="">Photography </li>
           </ul>
-          <div className="flex flex-1 relative justify-center items-center border-2 border-blue-500">
-            <Image
-              src="https://ucarecdn.com/43ef937c-70c9-4c57-b746-020b2771a616/-/preview/-/quality/smart/"
-              alt="Profile Picture"
-              width={45}
-              height={45}
-            ></Image>
+          <div className="flex relative justify-center items-center border-2 border-blue-500">
+            <Image src="" alt="Profile Picture" width={45} height={45}></Image>
           </div>
         </nav>
         <div className="flex flex-row flex-grow-0 relative justify-center py-4 border-2 border-green-500">
