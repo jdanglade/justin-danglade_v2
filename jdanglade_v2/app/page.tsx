@@ -89,10 +89,10 @@ const HomePage = () => {
         >
           <div className="flex flex-col border-2 border-blue-500 ">
             <span className="text-center">
-              From a young age I&apos;ve been so curious about how computers
-              work. Why are there so many different kinds of computers? Why are
-              some computers so unresonably slow and some so responsive it feels
-              like magic? Curiosity took me to university, Florida International
+              From a young age I&apos;ve been curious about how computers work.
+              Why are there so many different kinds of computers? Why are some
+              computers so unresonably slow and some so responsive it feels like
+              magic? Curiosity took me to university, Florida International
               University. There I learned so much that I ended up viewing
               computers totally drifferently. Computers aren&apos;t magic and
               from product to product they aren&apos;t all that different from
@@ -286,8 +286,8 @@ const HomePage = () => {
             mascot, I worked hard to get that degree from The Panthers. Branches
             of math I had never heard of and this time I was&apos;t working and
             studying at the same time and place. This time I was on the
-            professor&apos;s schedule. Still I can carry some Panther pride
-            because I got my Bachelor Degree there.
+            professor&apos;s schedule. I carry some pride getting my degree
+            there.
           </span>
         </div>
       </main>
