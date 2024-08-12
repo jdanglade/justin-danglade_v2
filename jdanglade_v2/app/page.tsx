@@ -3,7 +3,9 @@ import {
   IoLogoGithub,
   IoLogoLinkedin,
   IoArrowUpOutline,
+  IoImage,
 } from "react-icons/io5";
+import Link from "next/link";
 import CustomCard from "./components/custom-card";
 import expressLogo from "../public/logos/express.svg";
 import graphQLLogo from "../public/logos/graphql.svg";
@@ -15,7 +17,6 @@ import sqlLogo from "../public/logos/sql.svg";
 import profilePic from "../public/profile-pic.jpg";
 import fiuPanther from "../public/florida-panther.jpg";
 import mdcKendall from "../public/mdc-kendall-campus.jpg";
-import Link from "next/link";
 
 const techStackLogos = [
   reactLogo,
@@ -30,24 +31,28 @@ const techStackLogos = [
 const HomePage = () => {
   const amazonClone = {
     title: "Amazon",
-    details: "A clone of the amazon website",
-    techStack: ["stuff", "othe stuff"],
+    details:
+      "A clone of the amazon website Why THE FUCK WON'T THIS FUCKING TEXT CENTERS",
+    techStack: ["tech", " stack", "item", "after", "item"],
   };
 
   return (
-    <div className="flex justify-between relative h-full gap-2 py-24 border-2 border-white">
-      <header className="flex-1 flex-col justify-between h-full sticky left-0 top-12 mx-12 border-2 border-red-500">
-        <div className="flex flex-col justify-start relative text-slate-100 border-2 border-green-500">
-          <div className="flex text-nowrap text-6xl pb-8 border-2 border-blue-500">
+    <div className="flex justify-between relative h-full gap-2 py-24 ">
+      {/* border-2 border-white */}
+      <header className="flex-1 flex-col justify-between h-full sticky left-0 top-12 mx-12 ">
+        {/* border-2 border-red-500 */}
+        <div className="flex flex-col justify-start relative text-slate-100 ">
+          {/* border-2 border-green-500 */}
+          <div className="flex justify-center items-center text-nowrap text-6xl pb-8 ">
+            {/* border-2 border-blue-500 */}
             <span className="font-thin">Justin</span>
             <span className="font-mono">Danglade</span>
           </div>
-          <span className="font-mono text-2xl font-thin border-2 border-blue-500">
-            Front End Developer
-          </span>
         </div>
-        <nav className="flex h-56 justify-start font-mono border-2 border-green-500">
-          <ul className="flex flex-col justify-evenly pt-12 px-12 items-center border-2 border-blue-500">
+        <nav className="flex h-56 justify-start font-mono ">
+          {/* border-2 border-green-500 */}
+          <ul className="flex flex-col justify-evenly pt-12 px-12 items-center ">
+            {/* border-2 border-blue-500 */}
             <li className="">
               <Link href="#top">
                 <IoArrowUpOutline />
@@ -62,9 +67,9 @@ const HomePage = () => {
             <li className="">
               <Link href="#education">Education</Link>
             </li>
-            <li className="">Photography </li>
           </ul>
-          <div className="flex relative justify-center items-center border-2 border-blue-500">
+          <div className="flex relative justify-center items-center ">
+            {/* border-2 border-blue-500 */}
             <Image
               src={profilePic}
               alt="Profile Picture"
@@ -72,22 +77,37 @@ const HomePage = () => {
             />
           </div>
         </nav>
-        <div className="flex flex-row flex-grow-0 relative justify-center py-4 border-2 border-green-500">
-          <div className="flex justify-center px-12 border-2 border-blue-500">
-            <IoLogoGithub fontSize="30px" />
+        <div className="flex flex-row flex-grow-0 relative justify-center py-16 ">
+          {/* border-2 border-green-500 */}
+          <div className="flex justify-center px-12 ">
+            {/* border-2 border-blue-500 */}
+            <a target="_blank" href="https://www.github.com/jdanglade">
+              <IoLogoGithub fontSize="30px" />
+            </a>
           </div>
-          <div className="flex justify-center px-12 border-2 border-blue-500">
-            <IoLogoLinkedin fontSize="30px" />
+          <div className="flex justify-center px-12 ">
+            {/* border-2 border-blue-500 */}
+            <a target="_blank" href="https://www.linkedin.com/justin-danglade/">
+              <IoLogoLinkedin fontSize="30px" />
+            </a>
+          </div>
+          <div className="flex justify-center px-12 ">
+            {/* border-2 border-blue-500 */}
+            <a target="_blank" href="https://www.github.com/jdanglade">
+              <IoImage fontSize="30px" />
+            </a>
           </div>
         </div>
       </header>
-
-      <main className="flex-1 flex-col justify-start h-full sticky font-mono top-12 mx-12 border-2 border-red-500">
-        <div
-          id="top"
-          className="flex flex-1 flex-col justify-start border-2 border-green-500"
-        >
-          <div className="flex flex-col border-2 border-blue-500 ">
+      <main
+        id="top"
+        className="flex-1 flex-col justify-start h-full sticky font-mono top-12 mx-12 "
+      >
+        {/* border-2 border-red-500 */}
+        <div className="flex flex-1 flex-col justify-start ">
+          {/* border-2 border-green-500 */}
+          <div className="flex flex-col pt-16">
+            {/* border-2 border-blue-500 */}
             <span className="text-center">
               From a young age I&apos;ve been curious about how computers work.
               Why are there so many different kinds of computers? Why are some
@@ -106,8 +126,9 @@ const HomePage = () => {
           </div>
           <div
             id="tech-stack"
-            className="flex flex-1 flex-wrap justify-center items-center py-6 px-6 border-2 border-blue-500 "
+            className="flex flex-1 flex-wrap justify-center items-center py-6 px-6  "
           >
+            {/* border-2 border-blue-500 */}
             {techStackLogos.map((logo, index) => {
               return (
                 <span key={index} className="flex p-10">
@@ -122,10 +143,11 @@ const HomePage = () => {
               );
             })}
           </div>
-          <div className="flex-grow h-96 overflow-scroll overscroll-auto border-2 border-blue-500">
+          <div className="expCardContainer flex-grow h-96 overflow-scroll overscroll-auto">
+            {/* border-2 border-blue-500 */}
             <div
               id="experience"
-              className="flex flex-col justify-center items-center border-2 border-white"
+              className="flex flex-col justify-center items-center "
             >
               <CustomCard
                 title={amazonClone.title}
@@ -232,10 +254,12 @@ const HomePage = () => {
         </div>
         <div
           id="education"
-          className="flex flex-col justify-start items-center relative text-center border-2 border-green-500 "
+          className="flex flex-col justify-start items-center relative text-center  "
         >
-          <div className="py-12">
-            <div className="flex justify-center pb-8 border-2 border-blue-500">
+          {/* border-2 border-green-500 */}
+          <div className="">
+            <div className="flex justify-center py-12 ">
+              {/* border-2 border-blue-500 */}
               <span className="text-nowrap text-center text-4xl">
                 Miami-Dade College
               </span>
@@ -246,7 +270,6 @@ const HomePage = () => {
               className="w-max h-full object-cover rounded-xl"
             />
           </div>
-
           <span className="">
             I got my associates degree at Miami Dade College and while I was
             there, I took up a job as a tutor. At first, I provided tutoring for
@@ -257,19 +280,17 @@ const HomePage = () => {
             misunderstandings was pretty useful when taking my studies
             further...
           </span>
-
-          <div className="py-12">
-            <div className="flex justify-center pb-8 border-2 border-blue-500">
-              <span className="text-balance text-center text-4xl">
-                Florida International University
-              </span>
-            </div>
-            <Image
-              src={fiuPanther}
-              alt="Florida International University"
-              className="w-max h-full object-cover rounded-xl"
-            />
+          <div className="flex justify-center py-12">
+            {/* border-2 border-blue-500 */}
+            <span className="text-balance text-center text-4xl">
+              Florida International University
+            </span>
           </div>
+          <Image
+            src={fiuPanther}
+            alt="Florida International University"
+            className="w-max h-full object-cover rounded-xl"
+          />
           {/* <div className="flex justify-center pt-8 border-2 border-blue-500">
             <span className="text-4xl">Florida Internation University</span>
           </div>
@@ -282,12 +303,13 @@ const HomePage = () => {
           </div> */}
           <span className="">
             After MDC I moved on to Florida International University to complete
-            my Bachelor&apos;s degree. The Florida Panthers, that is a cool
-            mascot, I worked hard to get that degree from The Panthers. Branches
-            of math I had never heard of and this time I was&apos;t working and
-            studying at the same time and place. This time I was on the
-            professor&apos;s schedule. I carry some pride getting my degree
-            there.
+            my Bachelor&apos;s degree. The Florida Panthers, that is a pretty
+            cool mascot and I worked hard to get that degree from The Panthers.
+            There were branches of math I had never heard of, deep explorations
+            into the processor and networking architectures. This time I
+            was&apos;t working and studying at the same time and place. This
+            time I was on the professor&apos;s schedule. I carry some pride
+            getting my degree there.
           </span>
         </div>
       </main>
