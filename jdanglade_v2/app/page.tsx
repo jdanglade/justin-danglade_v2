@@ -6,7 +6,7 @@ import {
   IoImage,
 } from "react-icons/io5";
 import Link from "next/link";
-import CustomCard from "./components/custom-card";
+import ExperienceCard from "./components/ExperienceCard";
 import expressLogo from "../public/logos/express.svg";
 import graphQLLogo from "../public/logos/graphql.svg";
 import mongoDBLogo from "../public/logos/mongodb.svg";
@@ -149,105 +149,47 @@ const HomePage = () => {
               id="experience"
               className="flex flex-col justify-center items-center "
             >
-              <CustomCard
+              <ExperienceCard
                 title={amazonClone.title}
                 details={amazonClone.details}
                 techStack={amazonClone.techStack}
+                image={profilePic}
               />
-              <CustomCard
+              <ExperienceCard
                 title={amazonClone.title}
                 details={amazonClone.details}
                 techStack={amazonClone.techStack}
+                image={profilePic}
               />
-              <CustomCard
+              <ExperienceCard
                 title={amazonClone.title}
                 details={amazonClone.details}
                 techStack={amazonClone.techStack}
+                image={profilePic}
               />
-              <CustomCard
+              <ExperienceCard
                 title={amazonClone.title}
                 details={amazonClone.details}
                 techStack={amazonClone.techStack}
+                image={profilePic}
               />
-              <CustomCard
+              <ExperienceCard
                 title={amazonClone.title}
                 details={amazonClone.details}
                 techStack={amazonClone.techStack}
+                image={profilePic}
               />
-              <CustomCard
+              <ExperienceCard
                 title={amazonClone.title}
                 details={amazonClone.details}
                 techStack={amazonClone.techStack}
+                image={profilePic}
               />
-              <CustomCard
+              <ExperienceCard
                 title={amazonClone.title}
                 details={amazonClone.details}
                 techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
-              />
-              <CustomCard
-                title={amazonClone.title}
-                details={amazonClone.details}
-                techStack={amazonClone.techStack}
+                image={profilePic}
               />
             </div>
           </div>

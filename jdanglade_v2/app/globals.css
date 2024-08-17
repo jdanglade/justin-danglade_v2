@@ -12,15 +12,12 @@ body {
 }
 
 .expCardContainer {
-  border-color: rgb(213, 87, 59);
+  border-color: rgb(81, 81, 61);
   border-width: 2px;
 }
 
 .expCard {
-  border-color: rgb(81, 81, 61);
-  border-width: 2px;
-}
-.expCardContent {
+  flex-direction: column;
   border-color: rgb(124, 158, 178);
   border-width: 2px;
 }
