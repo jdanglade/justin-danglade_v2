@@ -37,7 +37,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="flex justify-between relative h-full gap-2 py-24 ">
+    <div className="flex justify-between relative h-full gap-2 py-24">
       {/* border-2 border-white */}
       <header className="flex-1 flex-col justify-between h-full sticky left-0 top-12 mx-12 ">
         {/* border-2 border-red-500 */}
@@ -49,9 +49,9 @@ const HomePage = () => {
             <span className="font-mono">Danglade</span>
           </div>
         </div>
-        <nav className="flex h-56 justify-start font-mono ">
+        <nav className="flex h-56 justify-start font-mono">
           {/* border-2 border-green-500 */}
-          <ul className="flex flex-col justify-evenly pt-12 px-12 items-center ">
+          <ul className="flex flex-col justify-evenly items-center pt-12 px-12">
             {/* border-2 border-blue-500 */}
             <li className="">
               <Link href="#top">
@@ -68,7 +68,7 @@ const HomePage = () => {
               <Link href="#education">Education</Link>
             </li>
           </ul>
-          <div className="flex relative justify-center items-center ">
+          <div className="flex justify-center items-center">
             {/* border-2 border-blue-500 */}
             <Image
               src={profilePic}
@@ -77,9 +77,9 @@ const HomePage = () => {
             />
           </div>
         </nav>
-        <div className="flex flex-row flex-grow-0 relative justify-center py-16 ">
+        <div className="flex flex-row flex-grow-0 justify-center py-16 ">
           {/* border-2 border-green-500 */}
-          <div className="flex justify-center px-12 ">
+          <div className="flex justify-center px-12">
             {/* border-2 border-blue-500 */}
             <a target="_blank" href="https://www.github.com/jdanglade">
               <IoLogoGithub fontSize="30px" />
@@ -101,10 +101,10 @@ const HomePage = () => {
       </header>
       <main
         id="top"
-        className="flex-1 flex-col justify-start h-full sticky font-mono top-12 mx-12 "
+        className="flex-1 flex-col justify-start sticky top-12 h-full mx-12 font-mono"
       >
         {/* border-2 border-red-500 */}
-        <div className="flex flex-1 flex-col justify-start ">
+        <div className="flex flex-1 flex-col justify-start">
           {/* border-2 border-green-500 */}
           <div className="flex flex-col pt-16">
             {/* border-2 border-blue-500 */}
@@ -147,7 +147,7 @@ const HomePage = () => {
             {/* border-2 border-blue-500 */}
             <div
               id="experience"
-              className="flex flex-col justify-center items-center "
+              className="flex flex-col justify-center items-center"
             >
               <ExperienceCard
                 title={amazonClone.title}
@@ -196,15 +196,13 @@ const HomePage = () => {
         </div>
         <div
           id="education"
-          className="flex flex-col justify-start items-center relative text-center  "
+          className="flex flex-col justify-start items-center relative text-center"
         >
           {/* border-2 border-green-500 */}
           <div className="">
-            <div className="flex justify-center py-12 ">
+            <div className="flex justify-center py-12">
               {/* border-2 border-blue-500 */}
-              <span className="text-nowrap text-center text-4xl">
-                Miami-Dade College
-              </span>
+              <span className="text-center text-4xl">Miami-Dade College</span>
             </div>
             <Image
               src={mdcKendall}
@@ -224,7 +222,7 @@ const HomePage = () => {
           </span>
           <div className="flex justify-center py-12">
             {/* border-2 border-blue-500 */}
-            <span className="text-balance text-center text-4xl">
+            <span className="text-center text-4xl">
               Florida International University
             </span>
           </div>
