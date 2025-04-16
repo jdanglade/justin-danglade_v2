@@ -3,23 +3,12 @@
 @tailwind utilities;
 
 :root {
-  background: linear-gradient(190deg, #16082d 10%, #000000 45%);
+  background: #000000;
 }
 
 body {
   color: rgb(255, 255, 255);
-  overflow-x: hidden;
-}
-
-.expCardContainer {
-  border-color: rgb(81, 81, 61);
-  border-width: 2px;
-}
-
-.expCard {
-  flex-direction: column;
-  border-color: rgb(124, 158, 178);
-  border-width: 2px;
+  box-sizing: border-box;
 }
 
 @layer base {
@@ -29,6 +18,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
+
+@layer components {
 }
 
 @layer utilities {

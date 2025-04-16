@@ -1,0 +1,117 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion, useTransform } from "framer-motion";
+import { logos } from "./assets/logos";
+import { useTimeContext } from "./Hooks/useTimeContext";
+import { TimeProvider } from "./Contexts/TimeContext";
+import LogoMotionType from "./Interfaces/LogoType";
+
+/*--Animate Logo--*/
+
+export const MovingLogo: React.FC = () => {
+  // Linear || Circular
+
+  return (
+    <TimeProvider>
+      <CircularMotion />
+    </TimeProvider>
+  );
+};
+
+// Circular Motion for Logos
+const CircularMotion: React.FC = () => {
+  // Position elements in a perfect circle
+  const numOfIcons = logos.length;
+  const radius = numOfIcons * 20;
+  const offsetAngles = useTransform(() =>
+    Array.from({ length: numOfIcons }, (_, i) => (i / numOfIcons) * 2 * Math.PI)
+  );
+  const offsets = offsetAngles.get();
+
+  // Logos to animation
+  const Logos: LogoMotionType[] = logos.map((logo, index) => {
+    return {
+      key: logo.key,
+      icon: logo.icon,
+      style: logo.style,
+      rotation: true,
+      radius: radius,
+      offset: offsets[index],
+    };
+  });
+
+  // Animate Logos
+  const visibleIcons = useTimeContext().visibleIcons;
+  return (
+    <motion.div
+      style={{
+        height: radius * 2,
+        width: radius * 2,
+        padding: radius + 32,
+      }}
+      className="flex justify-center items-center relative z-0"
+    >
+      {Logos.map((logo, index) => {
+        return (
+          visibleIcons > index && (
+            <CircularMotionLogo
+              key={logo.key}
+              icon={logo.icon}
+              style={{ color: logo.style?.color || "#fff" }}
+              offset={offsets[index]}
+              radius={radius}
+            />
+          )
+        );
+      })}
+    </motion.div>
+  );
+};
+
+// Logo component for circular motion
+const CircularMotionLogo: React.FC<LogoMotionType> = (logo) => {
+  const { offset = 10, radius = 150 } = logo;
+  const time = useTimeContext().time;
+
+  // Transform x,y positions of circle
+  const x = useTransform(time, (t) => {
+    return Math.cos(-t / 8000 - offset) * radius;
+  });
+  const y = useTransform(time, (t) => {
+    return Math.sin(-t / 8000 - offset) * -radius;
+  });
+
+  // Framer Motion variants
+  const LogoVariants = {
+    initial: { opacity: 0, scale: 0 },
+    show: { opacity: 1, scale: 1, transition: { duration: 1.5 } },
+  };
+
+  return (
+    <motion.div
+      variants={LogoVariants}
+      initial="initial"
+      animate="show"
+      style={{
+        translateX: x,
+        translateY: y,
+      }}
+      className="flex justify-center items-center absolute"
+    >
+      <logo.icon style={logo.style} className="flex relative w-16 h-16" />
+    </motion.div>
+  );
+};
+
+// Linear Motion for Logos
+const LinearMotion: React.FC = () => {
+  return <></>;
+};
+
+// Logo component for linear motion
+const LinearMotionLogo: React.FC<LogoMotionType> = (logo) => {
+  return <AnimatePresence></AnimatePresence>;
+};
+
+export default MovingLogo;
