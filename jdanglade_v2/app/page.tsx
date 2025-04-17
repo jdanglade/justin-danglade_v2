@@ -61,7 +61,7 @@ const ContentContainer: React.FC = () => {
     <div className="flex flex-col justify-start items-center relative w-full h-full z-0">
       <LogoMotion />
       <div className="flex flex-col justify-start items-center relative w-11/12 lg:px-8 ">
-        <span className="text-justify py-8 px-16 lg:px-8">
+        <span className="text-justify py-8 px-6 md:px-8">
           Throughout the years I&apos;ve learned alot about the internals
           several programming languages. C/C++, Java, Python, JavaScript and the
           topical the differences between them. How they all ultimately turn in
@@ -98,7 +98,7 @@ const ContentContainer: React.FC = () => {
           alt="Miami-Dade College Kendall Campus"
           className="min-w-96 lg:w-full h-full object-cover rounded-xl "
         />
-        <span className="text-justify py-8 px-16 ">
+        <span className="text-justify px-6 md:px-8 ">
           I got my associates degree at Miami Dade College and while I was
           there, I took up a job as a tutor. At first, I provided tutoring for
           CGS1060, a basic Microsoft Office course that was for the most part
@@ -122,7 +122,7 @@ const ContentContainer: React.FC = () => {
         />
       </div>
       <div className="flex flex-col justify-start items-center relative w-11/12">
-        <span className="text-justify py-8 px-16">
+        <span className="text-justify px-6 md:px-8">
           After MDC I moved on to Florida International University to complete
           my Bachelor&apos;s degree. The Florida Panthers, that is a pretty cool
           mascot and I worked hard to get that degree from The Panthers. There
