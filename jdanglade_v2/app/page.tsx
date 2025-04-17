@@ -11,9 +11,9 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="flex flex-col relative w-full h-full justify-start items-center text-center "
+      className="flex flex-col relative w-full h-auto justify-start items-center text-center "
     >
-      <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center lg:items-start w-full h-full gap-2 p-6 ">
+      <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center lg:items-start w-full h-auto gap-2 p-6 ">
         <NavContainer />
         <ContentContainer />
       </div>
@@ -24,7 +24,7 @@ const Home = () => {
 // Link to education page
 const NavContainer: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center relative lg:sticky lg:top-6 z-10 w-4/6 gap-2 ">
+    <div className="flex flex-col justify-center items-center relative lg:sticky lg:top-6 z-10 w-4/6 lg:pl-12 gap-2 ">
       <div className="flex justify-center items-center relative text-4xl lg:2xl ">
         <span className="relative font-thin">Justin</span>
         <span className="relative font-mono">Danglade</span>
@@ -41,7 +41,7 @@ const NavContainer: React.FC = () => {
             return (
               <li key={index + 1} className="relative z-100 px-2 ">
                 <a className="" target="_blank" href={option.link}>
-                  <option.icon className="flex relative w-6 h-6" />
+                  <option.icon className="flex relative w-6 h-auto" />
                 </a>
               </li>
             );
@@ -96,9 +96,9 @@ const ContentContainer: React.FC = () => {
         <Image
           src={mdc_kendall}
           alt="Miami-Dade College Kendall Campus"
-          className="min-w-96 lg:w-full h-full object-cover rounded-xl "
+          className="w-4/5 min-w-64 h-auto lg:min-w-16 object-cover rounded-xl "
         />
-        <span className="text-justify px-6 md:px-8 ">
+        <span className="text-justify py-6 px-10 sm:px-14 md:px-20">
           I got my associates degree at Miami Dade College and while I was
           there, I took up a job as a tutor. At first, I provided tutoring for
           CGS1060, a basic Microsoft Office course that was for the most part
@@ -118,11 +118,11 @@ const ContentContainer: React.FC = () => {
         <Image
           src={florida_pather}
           alt="Florida International University"
-          className="min-w-96 lg:min-w-24 h-auto object-cover rounded-xl"
+          className="w-4/5 min-w-64  h-auto lg:min-w-16 object-cover rounded-xl"
         />
       </div>
       <div className="flex flex-col justify-start items-center relative w-11/12">
-        <span className="text-justify px-6 md:px-8">
+        <span className="text-justify py-6 px-10 sm:px-14 md:px-20">
           After MDC I moved on to Florida International University to complete
           my Bachelor&apos;s degree. The Florida Panthers, that is a pretty cool
           mascot and I worked hard to get that degree from The Panthers. There
