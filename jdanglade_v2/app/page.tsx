@@ -60,7 +60,7 @@ const ContentContainer: React.FC = () => {
   return (
     <div className="flex flex-col justify-start items-center relative w-full h-full z-0">
       <LogoMotion />
-      <div className="flex flex-col justify-start items-center relative w-11/12 lg:px-8 ">
+      <div className="flex flex-col justify-start items-center relative w-11/12 lg:px-10 ">
         <span className="text-justify py-8 px-6 md:px-8">
           Throughout the years I&apos;ve learned alot about the internals
           several programming languages. C/C++, Java, Python, JavaScript and the
