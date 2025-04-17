@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ProjectType } from "./Interfaces/ProjectType";
 
-// An element that contains an example project
+// A ProjectCard element contains an example project for the portfolio.
 const ProjectCard: React.FC<ProjectType> = ({
   projectImage,
   name,

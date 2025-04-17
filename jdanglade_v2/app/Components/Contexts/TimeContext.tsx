@@ -14,6 +14,7 @@ export const TimeContext = createContext<TimeContextType | undefined>(
 export const TimeProvider: React.FC<TimeContextProps> = ({ children }) => {
   const numOfIcons = logos.length;
   const time = useTime();
+  // Icons will become visible every 1 second
   const [visibleIcons, setVisibleIcons] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {

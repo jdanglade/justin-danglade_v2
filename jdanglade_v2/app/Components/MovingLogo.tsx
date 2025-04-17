@@ -1,14 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { AnimatePresence, motion, useTransform } from "framer-motion";
 import { logos } from "./assets/logos";
 import { useTimeContext } from "./Hooks/useTimeContext";
 import { TimeProvider } from "./Contexts/TimeContext";
 import LogoMotionType from "./Interfaces/LogoType";
 
-/*--Animate Logo--*/
-
+/*--Animated Logos--*/
 export const MovingLogo: React.FC = () => {
   // Linear || Circular
 
@@ -71,10 +70,9 @@ const CircularMotion: React.FC = () => {
 
 // Logo component for circular motion
 const CircularMotionLogo: React.FC<LogoMotionType> = (logo) => {
+  // Move according to time and offset about a circle
   const { offset = 10, radius = 150 } = logo;
   const time = useTimeContext().time;
-
-  // Transform x,y positions of circle
   const x = useTransform(time, (t) => {
     return Math.cos(-t / 8000 - offset) * radius;
   });
@@ -88,6 +86,7 @@ const CircularMotionLogo: React.FC<LogoMotionType> = (logo) => {
     show: { opacity: 1, scale: 1, transition: { duration: 1.5 } },
   };
 
+  // Render the logo
   return (
     <motion.div
       variants={LogoVariants}
@@ -111,7 +110,7 @@ const LinearMotion: React.FC = () => {
 
 // Logo component for linear motion
 const LinearMotionLogo: React.FC<LogoMotionType> = (logo) => {
-  return <AnimatePresence></AnimatePresence>;
+  return <></>;
 };
 
 export default MovingLogo;
