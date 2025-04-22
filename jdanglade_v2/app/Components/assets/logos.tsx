@@ -7,10 +7,10 @@ import {
   TbBrandPrisma,
 } from "react-icons/tb";
 import { IoLogoGithub, IoLogoLinkedin, IoImage } from "react-icons/io5";
-import { LogoMotionType } from "../Interfaces/LogoType";
+import { MovingLogoType } from "../Interfaces/MovingLogoType";
 
 // List of contact options
-export const contactOptions: LogoMotionType[] = [
+export const contactOptions: MovingLogoType[] = [
   { icon: IoLogoGithub, link: "https://www.github.com/jdanglade" },
   {
     icon: IoLogoLinkedin,
@@ -23,7 +23,7 @@ export const contactOptions: LogoMotionType[] = [
 ];
 
 // Logos to render
-export const logos: LogoMotionType[] = [
+export const logos: MovingLogoType[] = [
   {
     key: 1,
     icon: TbBrandNextjs,

@@ -5,7 +5,7 @@ import { AnimatePresence, motion, useTransform } from "framer-motion";
 import { logos } from "./assets/logos";
 import { useTimeContext } from "./Hooks/useTimeContext";
 import { TimeProvider } from "./Contexts/TimeContext";
-import LogoMotionType from "./Interfaces/LogoType";
+import LogoMotionType, { MovingLogoType } from "./Interfaces/MovingLogoType";
 
 /*--Animated Logos--*/
 export const MovingLogo: React.FC = () => {
@@ -27,9 +27,10 @@ const CircularMotion: React.FC = () => {
     Array.from({ length: numOfIcons }, (_, i) => (i / numOfIcons) * 2 * Math.PI)
   );
   const offsets = offsetAngles.get();
+  console.log(offsets);
 
   // Logos to animation
-  const Logos: LogoMotionType[] = logos.map((logo, index) => {
+  const Logos: MovingLogoType[] = logos.map((logo, index) => {
     return {
       key: logo.key,
       icon: logo.icon,
@@ -54,7 +55,7 @@ const CircularMotion: React.FC = () => {
       {Logos.map((logo, index) => {
         return (
           visibleIcons > index && (
-            <CircularMotionLogo
+            <LogoMotion
               key={logo.key}
               icon={logo.icon}
               style={{ color: logo.style?.color || "#fff" }}
@@ -69,7 +70,7 @@ const CircularMotion: React.FC = () => {
 };
 
 // Logo component for circular motion
-const CircularMotionLogo: React.FC<LogoMotionType> = (logo) => {
+const LogoMotion: React.FC<MovingLogoType> = (logo) => {
   // Move according to time and offset about a circle
   const { offset = 10, radius = 150 } = logo;
   const time = useTimeContext().time;
@@ -109,7 +110,7 @@ const LinearMotion: React.FC = () => {
 };
 
 // Logo component for linear motion
-const LinearMotionLogo: React.FC<LogoMotionType> = (logo) => {
+const LinearMotionLogo: React.FC<MovingLogoType> = (logo) => {
   return <></>;
 };
 

@@ -2,7 +2,7 @@ import { MotionValue } from "framer-motion";
 import { IconType } from "react-icons";
 
 // Basic Motion capable Logo interface
-export interface LogoMotionType {
+export interface MovingLogoType {
   key?: number;
   icon: IconType;
   link?: string;
@@ -16,4 +16,4 @@ export interface LogoMotionType {
   offset?: number;
 }
 
-export default LogoMotionType;
+export default MovingLogoType;
