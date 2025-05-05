@@ -3,7 +3,7 @@ import { useTime } from "framer-motion";
 import TimeContextType, {
   TimeContextProps,
 } from "../Interfaces/TimeContextType";
-import { logos } from "../assets/logos";
+import { Logos } from "../assets/logos";
 
 // Time context
 export const TimeContext = createContext<TimeContextType | undefined>(
@@ -12,7 +12,7 @@ export const TimeContext = createContext<TimeContextType | undefined>(
 
 // Time context provider
 export const TimeProvider: React.FC<TimeContextProps> = ({ children }) => {
-  const numOfIcons = logos.length;
+  const numOfIcons = Logos.length;
   const time = useTime();
   // Icons will become visible every 1 second
   const [visibleIcons, setVisibleIcons] = useState(0);

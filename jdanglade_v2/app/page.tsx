@@ -1,10 +1,10 @@
 import Image from "next/image";
-import LogoMotion from "./Components/MovingLogo";
+import LogoMotion from "./Components/LogoMotion";
 import ProjectCard from "./Components/ProjectCard";
 import profile_pic from "./assets/profile_pic.jpg";
 import florida_pather from "./assets/florida_panther.jpg";
 import mdc_kendall from "./assets/mdc_kendall.jpg";
-import { contactOptions } from "./Components/assets/logos";
+import { ContactOptions } from "./Components/assets/logos";
 
 // Simple foreground positioning
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
   );
 };
 
-// Link to education page
+// Simple site navigation
 const NavContainer: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center relative lg:sticky lg:top-6 z-10 w-4/6 lg:pl-12 gap-2 ">
@@ -37,10 +37,15 @@ const NavContainer: React.FC = () => {
       />
       <div className="flex flex-row justify-center items-center w-full ">
         <ul className="flex flex-row justify-around items-center relative px-4 py-2 ">
-          {contactOptions.map((option, index) => {
+          {ContactOptions.map((option, index) => {
             return (
               <li key={index + 1} className="relative z-100 px-2 ">
-                <a className="" target="_blank" href={option.link}>
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href={option.link}
+                  className=""
+                >
                   <option.icon className="flex relative w-6 h-auto" />
                 </a>
               </li>
@@ -56,12 +61,14 @@ const NavContainer: React.FC = () => {
 // -Animated list of familiar technologies
 // -Personal introduction
 // -Project Portfolio
+// -Education
+// -Resume download
 const ContentContainer: React.FC = () => {
   return (
     <div className="flex flex-col justify-start items-center relative w-full h-full z-0">
       <LogoMotion />
-      <div className="flex flex-col justify-start items-center relative w-11/12 lg:px-10 ">
-        <span className="text-justify py-8 px-6 md:px-8">
+      <div className="flex flex-col justify-start items-center relative w-11/12">
+        <span className="text-justify py-8 px-4 md:px-6">
           Throughout the years I&apos;ve learned alot about the internals
           several programming languages. C/C++, Java, Python, JavaScript and the
           topical the differences between them. How they all ultimately turn in

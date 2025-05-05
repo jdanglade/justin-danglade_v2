@@ -12,8 +12,10 @@ export interface MovingLogoType {
   time?: MotionValue<number>;
   xPos?: MotionValue<number>;
   yPos?: MotionValue<number>;
-  radius?: number;
-  offset?: number;
+  xMovement: CallableFunction;
+  yMovement: CallableFunction;
+  radius: number | 0;
+  offset: number | 1;
 }
 
 export default MovingLogoType;
