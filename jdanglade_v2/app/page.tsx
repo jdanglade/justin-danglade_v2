@@ -1,6 +1,5 @@
 import Image from "next/image";
 import LogoMotion from "./Components/Logo/LogoMotion";
-import ProjectCard from "./Components/ProjectCard/ProjectCard";
 import profile_pic from "./assets/profile_pic.jpg";
 import florida_pather from "./assets/florida_panther.jpg";
 import mdc_kendall from "./assets/mdc_kendall.jpg";
