@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
+// Background color gradient is based arround the x and y variables from the pointer position
 const Background: React.FC = () => {
   const bg_Ref = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
@@ -30,10 +31,10 @@ const Background: React.FC = () => {
   return (
     <div
       ref={bg_Ref}
-      // Background color gradient is based arround the x and y variables from the pointer position
       className={
         "fixed top-0 left-0 w-full h-full -z-10 bg-[radial-gradient(circle_farthest-side_at_var(--x,_50%)_var(--y,_50%),_#25005e_0%,_#000_100%)]"
       }
+      //border-2 border-red-500
     />
   );
 };

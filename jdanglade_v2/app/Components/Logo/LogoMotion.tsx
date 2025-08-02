@@ -2,15 +2,15 @@
 
 import React from "react";
 import { AnimatePresence, motion, useTransform } from "framer-motion";
-import { Logos } from "./assets/logos";
-import { useTimeContext } from "./Hooks/useTimeContext";
-import { TimeProvider } from "./Contexts/TimeContext";
+import { Logos } from "../assets/logos";
+import { useTimeContext } from "../Hooks/useTimeContext";
+import { TimeProvider } from "../Contexts/TimeContext";
 import { MovingLogoType } from "./Interfaces/MovingLogoType";
 
 /*--Animated Logos--*/
 export const LogoMotion: React.FC = () => {
   // Linear || Circular
-
+  // Dynamically change the logo animation type
   return (
     <TimeProvider>
       <CircularMotion />
@@ -55,6 +55,7 @@ const CircularMotion: React.FC = () => {
       }}
       className="flex justify-center items-center relative z-0"
     >
+      {/* border-2 border-red-500 */}
       {logos.map((logo, index) => {
         return (
           visibleIcons > index && (
@@ -77,15 +78,19 @@ const CircularMotion: React.FC = () => {
 
 // Linear Motion for Logos
 const LinearMotion: React.FC = () => {
+  const numOfIcons = Logos.length;
+
   return <motion.div className="flex "></motion.div>;
+  {
+    /* border-2 border-red-500 */
+  }
 };
 
 // Logo component for circular motion
 const MovingLogo: React.FC<MovingLogoType> = (logo) => {
   // Move according to time and offset about a circle
   const time = useTimeContext().time;
-  const offset = logo.offset;
-  const radius = logo.radius;
+  const { offset = 0, radius = 1 } = logo;
 
   // 'x' and 'y'
   const x = useTransform(time, (t) => {
@@ -113,6 +118,7 @@ const MovingLogo: React.FC<MovingLogoType> = (logo) => {
       }}
       className="flex justify-center items-center absolute"
     >
+      {/* border-2 border-green-500 */}
       <a
         rel="noopener noreferrer"
         href={logo.link}

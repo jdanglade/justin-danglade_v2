@@ -1,19 +1,21 @@
 import Image from "next/image";
-import LogoMotion from "./Components/LogoMotion";
-import ProjectCard from "./Components/ProjectCard";
+import LogoMotion from "./Components/Logo/LogoMotion";
+import ProjectCard from "./Components/ProjectCard/ProjectCard";
 import profile_pic from "./assets/profile_pic.jpg";
 import florida_pather from "./assets/florida_panther.jpg";
 import mdc_kendall from "./assets/mdc_kendall.jpg";
 import { ContactOptions } from "./Components/assets/logos";
 
-// Simple foreground positioning
+// Foreground positioning
 const Home = () => {
   return (
     <div
       id="home"
       className="flex flex-col relative w-full h-auto justify-start items-center text-center "
     >
+      {/* border-2 border-red-500 */}
       <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center lg:items-start w-full h-auto gap-2 p-6 ">
+        {/* border-2 border-green-500 */}
         <NavContainer />
         <ContentContainer />
       </div>
@@ -21,11 +23,13 @@ const Home = () => {
   );
 };
 
-// Simple site navigation
+// Site navigation
 const NavContainer: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center relative lg:sticky lg:top-6 z-10 w-4/6 lg:pl-12 gap-2 ">
+      {/* border-2 border-blue-500 */}
       <div className="flex justify-center items-center relative text-4xl lg:2xl ">
+        {/* border-2 border-red-500 */}
         <span className="relative font-thin">Justin</span>
         <span className="relative font-mono">Danglade</span>
       </div>
@@ -35,18 +39,24 @@ const NavContainer: React.FC = () => {
         priority
         className="flex object-fill w-5/6 min-w-96 lg:w-9/12 h-auto rounded-xl relative "
       />
+      {/* border-2 border-red-500 */}
       <div className="flex flex-row justify-center items-center w-full ">
+        {/* border-2 border-green-500 */}
         <ul className="flex flex-row justify-around items-center relative px-4 py-2 ">
+          {/* border-2 border-blue-500 */}
           {ContactOptions.map((option, index) => {
             return (
               <li key={index + 1} className="relative z-100 px-2 ">
+                {/* border-2 border-red-500 */}
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
                   href={option.link}
                   className=""
                 >
+                  {/* border-2 border-green-500 */}
                   <option.icon className="flex relative w-6 h-auto" />
+                  {/* border-2 border-blue-500 */}
                 </a>
               </li>
             );
@@ -64,10 +74,13 @@ const NavContainer: React.FC = () => {
 // -Education
 // -Resume download
 const ContentContainer: React.FC = () => {
+  // Container positioning
   return (
     <div className="flex flex-col justify-start items-center relative w-full h-full z-0">
+      {/* border-2 border-blue-500 */}
       <LogoMotion />
       <div className="flex flex-col justify-start items-center relative w-11/12">
+        {/* border-2 border-red-500 */}
         <span className="text-justify py-8 px-4 md:px-6">
           Throughout the years I&apos;ve learned alot about the internals
           several programming languages. C/C++, Java, Python, JavaScript and the
@@ -94,8 +107,9 @@ const ContentContainer: React.FC = () => {
         </span>
       </div>
       <div className="flex flex-col justify-start items-center relative w-11/12">
+        {/* border-2 border-red-500 */}
         <div className="flex justify-center py-10 ">
-          {/* border-2 border-blue-500 */}
+          {/* border-2 border-green-500 */}
           <span className="text-center text-4xl lg:2xl  ">
             Miami-Dade College
           </span>
@@ -105,6 +119,7 @@ const ContentContainer: React.FC = () => {
           alt="Miami-Dade College Kendall Campus"
           className="w-4/5 min-w-64 h-auto lg:min-w-16 object-cover rounded-xl "
         />
+        {/* border-2 border-green-500 */}
         <span className="text-justify py-6 px-10 sm:px-14 md:px-20">
           I got my associates degree at Miami Dade College and while I was
           there, I took up a job as a tutor. At first, I provided tutoring for
@@ -114,8 +129,11 @@ const ContentContainer: React.FC = () => {
           classes as well. Seeing other&apos;s mistakes and misunderstandings
           was pretty useful when taking my studies further...
         </span>
+        {/* border-2 border-green-500 */}
       </div>
+      {/* border-2 border-red-500 */}
       <div className="flex flex-col justify-start items-center relative w-11/12 ">
+        {/* border-2 border-green-500 */}
         <div className="flex justify-center py-10 ">
           {/* border-2 border-blue-500 */}
           <span className="text-center text-4xl lg:2xl">
@@ -127,8 +145,11 @@ const ContentContainer: React.FC = () => {
           alt="Florida International University"
           className="w-4/5 min-w-64  h-auto lg:min-w-16 object-cover rounded-xl"
         />
+        {/* border-2 border-green-500 */}
       </div>
+      {/* border-2 border-red-500 */}
       <div className="flex flex-col justify-start items-center relative w-11/12">
+        {/* border-2 border-green-500 */}
         <span className="text-justify py-6 px-10 sm:px-14 md:px-20">
           After MDC I moved on to Florida International University to complete
           my Bachelor&apos;s degree. The Florida Panthers, that is a pretty cool
