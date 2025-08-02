@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ContactOptions } from "./Components/Foreground/assets/logos";
-import LogoMotion from "./Components/Foreground/Logo/LogoMotion";
+import MotionLogo from "./Components/Foreground/MotionLogo/MotionLogo";
 import profile_pic from "./Components/Foreground/assets/profile_pic.jpg";
 import mdc_kendall from "./Components/Foreground/assets/mdc_kendall.jpg";
 import florida_panther from "./Components/Foreground/assets/florida_panther.jpg";
@@ -77,7 +77,7 @@ const ContentContainer: React.FC = () => {
   return (
     <div className="flex flex-col justify-start items-center relative w-full h-full z-0">
       {/* border-2 border-blue-500 */}
-      <LogoMotion />
+      <MotionLogo />
       <div className="flex flex-col justify-start items-center relative w-11/12">
         {/* border-2 border-red-500 */}
         <span className="text-justify py-8 px-4 md:px-6">

@@ -7,7 +7,7 @@ import {
   TbBrandPrisma,
 } from "react-icons/tb";
 import { IoLogoGithub, IoLogoLinkedin, IoImage } from "react-icons/io5";
-import { MovingLogoType } from "../Logo/Interfaces/MovingLogoType";
+import { MovingLogoType } from "../MotionLogo/Interfaces/MovingLogoType";
 
 // List of contact options
 const startingPoint = () => {};

@@ -8,7 +8,7 @@ import { TimeProvider } from "../Contexts/TimeContext";
 import { MovingLogoType } from "./Interfaces/MovingLogoType";
 
 /*--Animated Logos--*/
-export const LogoMotion: React.FC = () => {
+export const MotionLogo: React.FC = () => {
   // Linear || Circular
   // Dynamically change the logo animation type
   return (
@@ -131,4 +131,4 @@ const MovingLogo: React.FC<MovingLogoType> = (logo) => {
   );
 };
 
-export default LogoMotion;
+export default MotionLogo;
