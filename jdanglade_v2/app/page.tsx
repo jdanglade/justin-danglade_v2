@@ -1,9 +1,9 @@
 import Image from "next/image";
-import LogoMotion from "./Components/Logo/LogoMotion";
+import LogoMotion from "./Components/Foreground/Logo/LogoMotion";
 import profile_pic from "./assets/profile_pic.jpg";
 import florida_pather from "./assets/florida_panther.jpg";
 import mdc_kendall from "./assets/mdc_kendall.jpg";
-import { ContactOptions } from "./Components/assets/logos";
+import { ContactOptions } from "./Components/Foreground/assets/logos";
 
 // Foreground positioning
 const Home = () => {
