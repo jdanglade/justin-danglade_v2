@@ -1,9 +1,9 @@
 import Image from "next/image";
-import LogoMotion from "./Components/Foreground/Logo/LogoMotion";
-import profile_pic from "./assets/profile_pic.jpg";
-import florida_pather from "./assets/florida_panther.jpg";
-import mdc_kendall from "./assets/mdc_kendall.jpg";
 import { ContactOptions } from "./Components/Foreground/assets/logos";
+import LogoMotion from "./Components/Foreground/Logo/LogoMotion";
+import profile_pic from "./Components/Foreground/assets/profile_pic.jpg";
+import mdc_kendall from "./Components/Foreground/assets/mdc_kendall.jpg";
+import florida_panther from "./Components/Foreground/assets/florida_panther.jpg";
 
 // Foreground positioning
 const Home = () => {
@@ -140,7 +140,7 @@ const ContentContainer: React.FC = () => {
           </span>
         </div>
         <Image
-          src={florida_pather}
+          src={florida_panther}
           alt="Florida International University"
           className="w-4/5 min-w-64  h-auto lg:min-w-16 object-cover rounded-xl"
         />
