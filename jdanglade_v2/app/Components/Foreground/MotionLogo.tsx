@@ -2,9 +2,9 @@
 
 import React from "react";
 import { AnimatePresence, motion, useTransform } from "framer-motion";
-import { Logos } from "../assets/logos";
-import { useTimeContext } from "../Hooks/useTimeContext";
-import { TimeProvider } from "../Contexts/TimeContext";
+import { Logos } from "./assets/logos";
+import { useTimeContext } from "./Hooks/useTimeContext";
+import { TimeProvider } from "./Contexts/TimeContext";
 import { MovingLogoType } from "./Interfaces/MovingLogoType";
 
 /*--Animated Logos--*/

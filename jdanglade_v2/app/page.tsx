@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ContactOptions } from "./Components/Foreground/assets/logos";
-import MotionLogo from "./Components/Foreground/MotionLogo/MotionLogo";
+import MotionLogo from "./Components/Foreground/MotionLogo";
 import profile_pic from "./Components/Foreground/assets/profile_pic.jpg";
 import mdc_kendall from "./Components/Foreground/assets/mdc_kendall.jpg";
 import florida_panther from "./Components/Foreground/assets/florida_panther.jpg";
